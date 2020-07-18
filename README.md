@@ -14,7 +14,7 @@
 
     Using this class is the same as using any sklearn-classification algorithm. First the 'fit' method
     needs to be ran on the training-data, and only then the predict method can be called with some test-data
-    and yields the predicted labels. A few notes:
+    which yields the predicted labels. A few notes:
 
         * Labels in the training-set are assumed to be label-encoded. Meaning, if there are K classes,
         then the set(y) should be {0,1,2....K-1}.
