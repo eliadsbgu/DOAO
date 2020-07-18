@@ -4,7 +4,7 @@
     Kang, Seokho, Sungzoon Cho, and Pilsung Kang. "Constructing a multi-class classifier
     using one-against-one approach with different binary classifiers." Neurocomputing 149 (2015): 677-682.
 
-    -The one-against-one binary classifiers and their hyperparameters are identical
+    -The one-against-one binary classifiers and their hyperparameters are mostly identical
     the ones mentioned in the paper.
 
     - The cross-validation error is the same validation error mentioned in the paper ( see binary_mean_error_score ).
