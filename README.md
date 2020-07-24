@@ -24,3 +24,16 @@
         This isn't handled as to prevent unexpected behavior within the algorithm. In such a case, choose different
         cv_folds arg or add more training data.
 
+
+
+    Experiments:
+    The experiments folder contains a dataset file that includes metrics on 150 classification datasets. The experiments were conducted using a 10-fold cross validation in
+    which parameters were tuned on the 90% training data using an internal 3-fold cross validation. 
+    DOAO Parameters are already tuned inside the model's fit method. The parameters grid used for AdaBoost is (with a decision tree base classifier):
+
+    param_grid = {"base_estimator__criterion": ["gini", "entropy"],
+                  "base_estimator__max_depth": [None, 1, 2, 3],
+                  "base_estimator__min_samples_split": [2, 4, 6, 0.05],
+                  "n_estimators": [i for i in range(45, 51)] + [2, 3, 4, 5],
+                  "learning_rate": [2 ** i for i in range(-4, 1)]
+              }
