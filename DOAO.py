@@ -100,8 +100,11 @@ class DiverseOAO:
 
     def __init__(self, num_classes, cv_folds=3, n_jobs=1, n_iterations=50):
         """
-        hard = majority voting rule
-        soft = argmax of the sum of predicted probabilities
+
+        :param num_classes: Number of unique target labels.
+        :param cv_folds: Number of cross-validation folds in the random grid search (passed to RandomGridSearch).
+        :param n_jobs: Passed to the random grid-search in sklearn's model selection (see n_jobs there).
+        :param n_iterations: Number of parameter settings that are sampled (passed to RandomGridSearch).
         """
         self.cv_folds = cv_folds
         self.n_jobs = n_jobs
