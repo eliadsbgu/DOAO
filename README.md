@@ -1,4 +1,4 @@
-# ML_COURSE_DOAO
+# DOAO
 
     DOAO.py is an implementation of :
     Kang, Seokho, Sungzoon Cho, and Pilsung Kang. "Constructing a multi-class classifier
